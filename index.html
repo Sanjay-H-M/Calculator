@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Calculator.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="calculator">
+        <div class="heading">
+            <img src="img.png" width="30px">
+            <h4> SCIENTIFIC CALCULATOR </h4>
+        </div>
+        <input type="text" id="inputBox" placeholder="0" readonly>
+        <div class="buttons">
+            <button onclick="calculateScientific('sqrt')">√</button>
+            <button onclick="calculateScientific('pow')">x²</button>
+            <button onclick="calculateScientific('exp')">eˣ</button>
+            <button onclick="clearScreen()" class="clear">AC</button>
+            <button onclick="calculateScientific('sin')">sin</button>
+            <button onclick="calculateScientific('cos')">cos</button>
+            <button onclick="calculateScientific('tan')">tan</button>
+            <button onclick="calculateScientific('log')">log</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="appendValue('%')">%</button>
+            <button onclick="appendValue('/')">/</button>
+            <button onclick="appendValue('*')">*</button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('-')">-</button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('+')">+</button>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="appendValue('(')">(</button>
+            <button onclick="appendValue(')')">)</button>
+            <button onclick="calculateResult()" class="equalbtn">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

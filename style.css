@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+}
+
+.calculator {
+    background: linear-gradient(45deg,gray,rgb(85, 85, 85),gray);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px 10px black;
+    width: 350px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.img{
+    background:#5e81ac;
+    padding: 5px;
+    border-radius: 25px;
+    gap: none;
+}
+
+.img img:hover{
+    cursor: pointer;
+}
+
+#inputBox {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #d8dee9;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid #5e81ac;
+    background: #594c6a;
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    box-shadow: 2px 3px 3px 2px black;
+    background: #0073ff;
+    transform: scale(1.1);
+    border: #4c566a;
+    border-radius: 10px;
+    color: black;
+}
+
+.clear{
+    background:blue;
+}
+
+.clear:hover{
+    background:red;
+}
+
+.equalbtn {
+    background: orangered;
+}
+
+.equalbtn:hover {
+    background: #dbbd35;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        max-width: 90%; 
+        padding: 15px;
+    }
+
+    #inputBox {
+        font-size: 1.3rem;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        max-width: 90%; 
+        padding: 10px;
+    }
+
+    #inputBox {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
